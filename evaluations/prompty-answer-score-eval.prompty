@@ -5,12 +5,12 @@ model:
   api: chat
   configuration:
     type: azure_openai
-    azure_deployment: gpt-4
+    azure_deployment: gpt-35-turbo
     api_key: ${env:AZURE_OPENAI_API_KEY}
     azure_endpoint: ${env:AZURE_OPENAI_ENDPOINT}
   parameters:
     temperature: 0.2
-    max_tokens: 200
+    max_tokens: 1000
     top_p: 1.0
     response_format:
       type: json_object
